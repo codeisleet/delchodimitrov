@@ -1,0 +1,17 @@
+baseURL = 'http://delchodimitrov.com/'
+languageCode = 'en-us'
+title = 'Delcho Dimitrov'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+# favicon
+favicon = "images/favicon.ico"
+# meta data
+author = "Delcho Dimitrov"
+description = "Deo - Personal Web Page"
+# homepage main section
+mainSections = ["blog"]

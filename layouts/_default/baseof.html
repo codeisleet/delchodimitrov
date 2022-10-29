@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {{ if isset .Params "title" }}
+        <title>{{ .Title }} | {{ site.Title }}</title>
+        {{ else }}
+        <title>{{ site.Title }}</title>
+        {{ end }}
+        <!--Bootstrap CSS-->    
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <!--Font Awsome CSS-->
+        <link rel="stylesheet" href="/css/all.min.css">
+        <!-- Custom CSS-->
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container flex-lg-column">
+                <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                    <span class="h3 fw-bold d-block d-lg-none">D.Dimitrov</span>
+                    <img src="/img/me-img.jpg" class="d-none d-lg-block rounded-circle" alt="DD">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-1 flex-lg-column text-lg-center">
+                        <li class="nav-item">
+                            <a class="link-custom nav-link {{ if $.IsHome }} active {{ end }}" href="/">Home</a>
+                        </li>
+                        <li class='nav-item '>
+                            <a class='link-custom nav-link {{ if eq .Title "About" }} active {{ end }}' href="/about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class='link-custom nav-link {{ if eq $.Title "Skills" }} active {{ end }}' href="/skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class='link-custom nav-link {{ if eq .Title "How To" }} active {{ end }}' href="/how-to/">How To</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class='link-custom nav-link {{ if eq .Type "blog" }} active {{ end }}' href="/blog/">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class='link-custom nav-link {{ if eq .Title "Contacts" }} active {{ end }}' href="/contacts/">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR -->
+        <!-- CONTENT div.container.content-wrapper.full-height.flex-lg-row#content-wrapper-->
+        <div id="content-wrapper">
+
+            {{- block "main" . -}}{{ end }}
+        </div>
+        <!-- CONTENT -->        
+        <!--JQuery-->
+        <script src="/js/jquery-3.6.1.min.js"></script>
+        <!--Bootstrap bundle JS-->
+        <script src="/js/bootstrap.bundle.js"></script>
+        <!--Back to Top addition-->
+        <script src="/js/back-to-top.js"></script>
+        <script>addBackToTop({
+            diameter: 50,
+            backgroundColor: 'rgb(55, 105, 55)',
+            textColor: '#fff'
+        })</script>
+        <script src="/js/main.js"></script>
+        <!---->
+    </body>
+</html>

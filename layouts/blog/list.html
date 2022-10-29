@@ -1,0 +1,72 @@
+{{ define "main" }}
+
+<div class="container full-height px-lg-5">
+
+    <div class="row pb-4" data-aos="fade-up">
+        <div class="col-lg-8">
+            <h6 class="text-brand">BLOG</h6>
+            <h1 class="link-custom">My Blog Posts</h1>
+        </div>
+    </div>    
+    <div class="row gy-4">
+
+        <div class="col-md-4" data-aos="fade-up">
+            <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                    <img class="rounded-4" src="/img/blog/thumbnails/test4.png" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                    <p class="text-brand mb-2">16 Oct, 2022</p>
+                    <h5 class="mb-4">My Wife Landed Her First IT Related Job as a Junior Java Developer!</h5>
+                    <a href="#" class="link-custom">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                    <img class="rounded-4" src="/img/blog/thumbnails/test1.png" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                    <p class="text-brand mb-2">20 Oct, 2022</p>
+                    <h5 class="mb-4">The Road to The GOLD Medal in The National Amateur MMA Championship!</h5>
+                    <a href="#" class="link-custom">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                    <img class="rounded-4" src="/img/blog/thumbnails/test3.png" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                    <p class="text-brand mb-2">21 Oct, 2022</p>
+                    <h5 class="mb-4">What a Close Call... Wife Forces Me To Sell My R6... Gonna Buy R1 THEN! </h5>
+                    <a href="#" class="link-custom">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        {{ range .RegularPages.ByDate.Reverse }}
+
+        <div class="col-md-4" data-aos="fade-up">
+            <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                    <img class="rounded-4" src="{{- .Params.Image -}}" alt="NO {{ .Params.Image }} Found">
+                </div>
+                <div class="card-custom-content p-4">
+                    <p class="text-brand mb-2">{{- .Date.Format "2006, Jan 02" -}}</p>
+                    <h5 class="mb-4">{{- .Params.Description -}}</h5>
+                    <a href="{{ .Params.Url }}" class="link-custom">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        {{ end }}
+    </div>
+
+</div>
+
+{{ end }}

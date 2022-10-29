@@ -1,0 +1,288 @@
+@import url(./fonts.css);
+
+:root {
+    --color-body: #172416;
+    --color-heading: rgb(224, 253, 226);
+    --color-base: rgb(55, 105, 55);
+    --color-base2: #000000;
+    --color-brand: #6db33f;
+    --color-brand2: rgba(0, 255, 0, 0.3);
+    --sidebar-width: 240px;
+    --font-base: "RedHatMono";
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), monospace;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-heading);
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+img {
+    width: 100%;
+}
+
+.text-brand {
+    color: var(--color-brand);
+}
+
+.bg-base {
+    background-color: var(--color-base);
+}
+
+div.about-card {
+    background: linear-gradient(rgba(3, 63, 71, 0.98), rgba(3, 63, 71, 0.95)), url(../img/sidebar-img.jpg);
+    color: #aaa;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.2);
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--color-base);
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-brand);
+}
+
+.navbar .nav-link.active:hover {
+
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+    color: white
+}
+
+.navbar .nav-link.active {
+    border-radius: 15%;
+    background-color: rgba(255, 255, 255, 0.658);
+    color: var(--color-brand);
+    text-shadow: 1px 1px 2px #000;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidebar-width);
+        background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)), url(../img/sidebar-img.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar-brand img {
+        border: 8px solid var(--color-brand);
+    }
+
+    /* CONTENT WRAPPER */
+    #content-wrapper {
+        padding-left: var(--sidebar-width); 
+    }
+    div.about-card {
+        height: 330px;
+    }
+}
+
+@media (min-width: 1201px) {
+    div.about-card {
+        height: 300px;
+    }
+}
+
+@media (min-width: 1400px) {
+    div.about-card {
+        height: 250px;
+    }
+
+    
+}
+
+.home-info {
+    color: var(--color-heading);
+}
+
+/* BTN */
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+
+.link-custom {
+    font-weight: 500;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+/*--------------------------------------*/
+h1.link-custom ,
+h3.link-custom {
+    font-weight: 800;
+    position: relative;
+}
+h1.link-custom::after ,
+h3.link-custom::after {
+    height: 15px;
+    background-color: rgb(15, 77, 15);
+    transition: all 1.8s;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+li>a.link-custom::after {
+    height: 5px;
+    top: 75%;
+    transition: all 1s;
+}
+
+
+/* CARD */
+.card-custom {
+    background: linear-gradient(rgba(3, 63, 71, 0.98), rgba(3, 63, 71, 0.95)), url(../img/sidebar-img.jpg);
+    min-height: 500px;
+}
+
+.card-custom .card-custom-image {
+    overflow: hidden;
+    max-height: 270px;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+/* CONTACT */
+#contact .form-control {
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--color-body);
+}
+
+#contact .form-control:focus {
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: var(--color-body);
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+width: 135px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+.iconbox {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+.iconbox-skills>img {
+    width: 50px;
+}
+
+.iconbox-skills {
+    margin: 15px;
+    background: linear-gradient( var(--color-brand2), rgba(255, 255, 255, 0.7));
+}
+
+.iconbox-skills:hover {
+    transform: scale(1.3);
+    transition: all 1s ease-in-out;
+    background: linear-gradient( var(--color-brand2), rgba(255, 255, 255, 0.9));
+    border: 5px solid rgb(9, 255, 0);
+    border-top: none;
+    border-right: 3px solid rgb(9, 255, 0);
+    border-left: 3px solid rgb(9, 255, 0);
+    padding: 0.5%;
+}
+
+code {
+    color: var(--color-brand);
+}
