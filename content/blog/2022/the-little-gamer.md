@@ -15,7 +15,7 @@ Rossy is one bright, little first-grader, who loves to play with the local kids,
 
 ### Back To School
 
-Well, `Back to school` might not be the best phrase here, because she has never been to school in the first place. However it's a popular catch-phrase recently, and since this is my `personal blog` I'mma write whatever I want, even it might won't make no sense occasionally. 
+Well, `Back to school` might not be the best phrase here, because she has never been to school in the first place. However it's a popular catch-phrase recently, and since this is my `personal blog` I'mma write whatever I want, even if it might won't make no sense occasionally. 
 
 So, as I mentioned `Rossy` is a first-grader and, like every little curious adventurer, she got her first brand new... `daddy's old lap-top`. She likes watching youtube videos, and she even has favorite creators/youtubers called [Danny And Andy](https://www.youtube.com/c/AndyStudio).
 
