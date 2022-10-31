@@ -7,6 +7,7 @@
     --color-base2: #000000;
     --color-brand: #6db33f;
     --color-brand2: rgba(0, 255, 0, 0.3);
+    --color-blog-link:  rgb(105, 150, 195);
     --sidebar-width: 240px;
     --font-base: "RedHatMono";
 }
@@ -285,4 +286,9 @@ width: 135px;
 
 code {
     color: var(--color-brand);
+}
+
+#blog-content a {
+    text-decoration: underline;
+    color: var(--color-blog-link);
 }
