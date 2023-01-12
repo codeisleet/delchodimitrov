@@ -32,7 +32,7 @@ title: About
                     <div class="bg-base about-card p-4 rounded-4 shadow-effect">
                         <h4>Oracle Certified Professional</h4>
                         <p class="text-brand mb-2">Java SE Professional since 06.2016</p>
-                        <p class="mb-0">Answering Challenging, Real-world, Scenario-based Questions, That Measure Problem Solving Skills Using Java code.</p>
+                        <p class="mb-0">Answering challenging, real-world, scenario-based questions, designed to measure the problem solving skills using java SE 8.</p>
                         <div class="link-custom"><a target="_blank" href="https://www.credly.com/badges/ed662413-62c6-4c1e-b914-4871cac7b806">Learn More...</a></div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ title: About
                     <div class="bg-base p-4 about-card rounded-4 shadow-effect">
                         <h4>Oracle PL/SQL Developer</h4>
                         <p class="text-brand mb-2">PL/SQL Certified Associate since 09.2016</p>
-                        <p class="mb-0">Expertise in Building Database-centric Internet Applications for Oracle Database 10g, 11g and 12c.</p>
+                        <p class="mb-0">Expertise in building database-centric Internet applications for Oracle Database 10g, 11g and 12c.</p>
                         <div class="link-custom"><a target="_blank" href="https://www.credly.com/badges/d380554a-283c-4eb9-8cfa-efe04e3e5091">Learn More...</a></div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ title: About
                     <div class="bg-base p-4 about-card rounded-4 shadow-effect">
                         <h4>Teamwork And Personal Skills Certified</h4>
                         <p class="text-brand mb-2">SoftSkills Certificate By SoftUni</p>
-                        <p class="mb-0">Completing Various Topics like Teamwork, Content Management and Project Tracking Tools.</p>
+                        <p class="mb-0">Completing various topics like Teamwork, Content Management and Project Tracking Tools.</p>
                         <div class="link-custom"><a target="_blank" href="https://softuni.bg/certificates/details/4044/8cf99acd">Learn More...</a></div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ title: About
                     <div class="bg-base p-4 about-card rounded-4 shadow-effect">
                         <h4>Learning Syber Security For 90 Days Straight</h4>
                         <p class="text-brand mb-2">A Badge for Hacking 90 days in a row</p>
-                        <p class="mb-0">90 Day Streak Badge Issued by Tryhackme.com for Completing SyberSec Related Tasks.</p>
+                        <p class="mb-0">90 Day Streak Badge issued by Tryhackme.com for Completing SyberSec Related Tasks.</p>
                         <div class="link-custom"><a target="_blank" href="https://tryhackme.com/kolimanred/badges/90-day-streak">Learn More...</a></div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ title: About
                     <div class="about-card bg-base p-4 rounded-4 shadow-effect">
                         <h4>Automotive Software Developer</h4>
                         <p class="text-brand mb-2">Visteon Electronics Bulgaria (2015 - 2016)</p>
-                        <p class="mb-0">Embedded Automotive Software Development with C and C++ of Various Components for Major Car Manufacturers like VW and Porshe.</p>
+                        <p class="mb-0">Embedded automotive software development with C and C++ of various components for major car manufacturers like VW and Porsche.</p>
                         <div class="link-custom"><a target="_blank" href="https://visteon.bg/">Learn More...</a></div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@ title: About
                     <div class="about-card bg-base p-4 rounded-4 shadow-effect">
                         <h4>Software Developer with Java EE</h4>
                         <p class="text-brand mb-2">MusalaSoft JSC (2016 - 2017)</p>
-                        <p class="mb-0">Working on various Spring and Spring-Boot Applications. Developing RESTful Web services and REST APIs. Designing, Implementing and Maintaining Java-based Software and Applications.</p>
+                        <p class="mb-0">Working on various Spring and Spring-Boot Applications. Developing RESTful Web services. Designing, implementing and maintaining Java-based Applications and Software.</p>
                         <div class="link-custom"><a target="_blank" href="https://www.musala.com/">Learn More...</a></div>
                     </div>
                 </div>
